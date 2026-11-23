@@ -1,0 +1,19 @@
+# CMake & build artifacts
+build/
+cmake-build-*/
+out/
+
+# Packaged release archives
+*.zip
+*.dmg
+
+# macOS & Windows OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.user
+*.suo
+*.vcxproj.user
