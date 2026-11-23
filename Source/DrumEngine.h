@@ -361,7 +361,7 @@ public:
                 const juce::String row = pEl->getStringAttribute("L" + juce::String(l));
                 for (int s = 0; s < std::min(maxSteps, row.length()); ++s)
                     patterns[static_cast<size_t>(p)].grid[static_cast<size_t>(l)][static_cast<size_t>(s)] =
-                        static_cast<uint8_t>(juce::jlimit(0, 3, row[s] - '0'));
+                        static_cast<uint8_t>(juce::jlimit(0, 3, static_cast<int>(row[s]) - static_cast<int>('0')));
             }
         }
     }
